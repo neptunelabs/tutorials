@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fsi_parameter>
+
+	<Plugins>
+		<Plugin src="MouseModes" />
+		<Plugin src="ZoomMeter" />
+
+		<PLUGIN src="Showcase">
+			<Align value="right" />
+			<Layout value="outside" />
+			<InitialSize value="1 items" />
+			<DragBar value="hidden" />
+
+			<LabelTextSize value="10" />
+	
+
+			<ImageWidth value="170" />
+			<ImageHeight value="106" />
+			<ImageBorderWidth value="0" />
+		</PLUGIN>
+		
+		<PLUGIN src="largetooltips">
+	      <TextColor value="000000" />
+	      <BackgroundColor value="F9F7E2" />
+	      <BackgroundAlpha value="95" />  
+	      <HighlightColor value="F9F7E2" />
+	      <ShadowColor value="FBD71D" />
+	      <LineWidth value="1" />
+	      <Delay value="0" />
+	      <CornerRadius value="0" />
+	   </PLUGIN>
+	
+	</Plugins>
+
+	<Options>
+		<NavWidth value="100" />
+		<NavMaskAlpha value="20" />
+		<NavMaskColor value="ffffff" />
+		<MenuAlign value="BL" />
+		<ScenePreload value="true" />
+	</Options>
+
+	<!-- 3D Images to display below -->
+	<Images>
+		<Image label="360° View">
+			<images3d prefix="/images/samples/notebook/img00" suffix=".png" from="72" to="95" />
+			<Options>
+				<InitialAction value="NextScene" />
+				<InitialActionDelay value="1" />
+				<InitialActionPersistent value="true" />
+			</Options>
+		</Image>
+
+		<Image label="Premium Touchpad">
+				<images3d prefix="/images/samples/notebook/img00" suffix=".png" from="72" to="95" />
+			<Options>
+				<InitialView value="1,1,0.360377,0.541887,0.644795,0.751322,0" />
+			</Options>
+		</Image>
+
+		<Image >
+				<images3d prefix="/images/samples/notebook/img00" suffix=".png" from="72" to="95" />
+			<Options>
+				<thumbLabel>
+					USB, Mini VGA<br/>and Slim Kensington case-lock
+				</thumbLabel>
+				<InitialView value="1,7,0.480618,0.693618,0.707433,0.860636,0" />
+			</Options>
+		</Image>
+
+		<Image >
+			<images3d prefix="/images/samples/notebook/img00" suffix=".png" from="72" to="95" />
+			<Options>
+				<thumbLabel>
+					HDMI, DC-IN, Headphones<br/> and Mini-Ethernet
+				</thumbLabel>
+				<InitialView value="1,19,0.317188,0.70026,0.50816,0.840885,0" />
+			</Options>
+		</Image>
+
+		<Image label="Webcam (720p)">
+				<images3d prefix="/images/samples/notebook/img00" suffix=".png" from="72" to="95" />
+			<Options>
+				<InitialView value="1,1,0.318998,0.11529,0.678388,0.379931,0" />
+			</Options>
+		</Image>
+
+		
+
+	</Images>
+
+</fsi_parameter>

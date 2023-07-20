@@ -1,0 +1,211 @@
+
+.fsi-skin-green .fsi-ui-menu-bar {
+	
+line-height: 1.7em;
+	background:rgba(81, 103, 34, 0.8);
+	height: 1.8em;
+
+}
+
+.fsi-skin-green .fsi-ui-menu-bar .fsi-ui-logo {
+	/* the dimension and styles of the logo container */
+	left:0.15em;
+	line-height:1.7em;
+	display:inline-block;
+	width:auto;
+	height:100%;
+	cursor: pointer;
+}
+
+.fsi-skin-green .fsi-ui-logo-image {
+	/* - remove this class to remove the logo in the menu bar */
+	/* - you can specify an URL to any other logo here */
+	background-image:url( "[fsi-skin-path]resources/example_logo.svg");
+	width:3em;
+}
+
+.fsi-skin-green .fsi-ui-button-container{
+	line-height: 1.7em;
+}
+
+
+.fsi-skin-green .fsi-ui-button  {
+	
+	line-height: 0.9em;
+	width:1.25em;
+	height:1.25em;
+	background:rgba(81, 103, 34);
+	
+	border:1px solid #ffffff;
+	border-radius: 4px;
+
+}
+
+
+.fsi-skin-green .fsi-ui-button-hover  {
+		border:1px solid #9eb33e;
+	background:rgba(137, 155, 56, 0.8);
+	
+}
+
+.fsi-skin-green .fsi-ui-button-active  {
+	background:rgba(67, 79, 44, 0.8);
+	border:1px solid #434f2c;
+}
+
+@font-face {
+	/* IMPORTANT: you need to change "font-family" when using a custom font */
+    font-family: 'FSI Viewer Icons Custom';
+    src: url('[fsi-skin-path]resources/_fonts/FSI Viewer Glyph Custom.woff2')  format('woff2');
+    src: url('[fsi-skin-path]resources/_fonts/FSI Viewer Glyph Custom.woff')  format('woff');
+    font-weight: normal; 
+    font-style: normal;
+}
+
+.fsi-skin-green .fsi-ui-button-icon {
+	font-family: "FSI Viewer Icons Custom" !important;
+	color: #ffffff;
+	font-size: 1.15em;
+	line-height: 1.15em;
+}
+
+.fsi-skin-green .fsi-ui-button-disabled .fsi-ui-button-icon {
+	opacity: 0.60;
+	color: #FFF;
+}
+
+.fsi-skin-green .fsi-ui-button-hover .fsi-ui-button-icon {
+}
+
+.fsi-skin-green .fsi-ui-button-active .fsi-ui-button-icon {
+}
+
+.fsi-skin-green .fsi-ui-menu-bar-disabled .fsi-ui-button-icon{
+	opacity: 0.30;
+	
+}
+
+/* select frame */
+.fsi-skin-green .fsi-ui-select-frame{
+	border-color:#434f2c;
+	background-color: rgba(255, 255, 255, 0.25);
+}
+
+/* progress bar */
+.fsi-skin-green .fsi-ui-progressbar{
+	color:#9eb33e;
+	background:rgba(81, 103, 34, 0.8);
+	border-color:#999;
+}
+
+.fsi-skin-green .fsi-ui-progressbar-text{
+	color:#555;
+}
+
+
+/* tool tips */
+.fsi-skin-green .fsi-ui-tool-tip {
+	color:#ffffff;
+	background-color:#434f2c;
+	border-radius:3px;
+	box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+
+.fsi-skin-green .fsi-ui-tool-tip-arrow {
+	width:2px;
+	border-top: 10px solid #434f2c;
+}
+
+
+/* navigation window */
+.fsi-skin-green .fsi-ui-nav-window {
+	
+	background-color:rgba(137, 155, 56, 0.4);
+	border-radius: 5px 5px 0px 0px ;
+	background:#b0c649;
+
+}
+
+
+.fsi-skin-green .fsi-ui-nav-frame {
+	border-color: #b0c649;
+	background-color: rgba(137, 155, 56, 0.2);
+}
+
+
+/* HotSpots */
+.fsi-skin-green div.fsi-ui-hotspot {
+
+	color:#fff;
+	border:1px solid rgba(255,255,255, 1.0);
+	border-radius: 2px;
+	background-color: rgba(84, 119, 15, 0.85);
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+}
+
+.fsi-skin-green div.fsi-ui-hotspot-hover {
+	border-width:2px;
+	background-color: rgba(160, 206, 78, 0.85);
+}
+
+.fsi-skin-green div.fsi-ui-hotspot-active {
+	background-color: rgba(160, 206, 78, 0.85);
+}
+
+.fsi-skin-green .fsi-ui-hotspot-mobile {
+}
+
+.fsi-skin-green .fsi-ui-hotspot-mobile-small {
+}
+
+
+
+/* individual button icons */
+.fsi-skin-green .fsi-ui-button.Reset .fsi-ui-button-icon:before{
+	content: "\0075";
+}
+.fsi-skin-green .fsi-ui-button.ZoomOut .fsi-ui-button-icon:before {
+	content: "\0078";
+}
+.fsi-skin-green .fsi-ui-button.ZoomIn .fsi-ui-button-icon:before {
+	content: "\0079";
+}
+.fsi-skin-green .fsi-ui-button.MouseMode_0 .fsi-ui-button-icon:before {
+	content: "\0076";
+}
+.fsi-skin-green .fsi-ui-button.MouseMode_1 .fsi-ui-button-icon:before {
+	content: "\0065";
+}
+.fsi-skin-green .fsi-ui-button.MouseMode_2 .fsi-ui-button-icon:before {
+	content: "\0066";
+}
+.fsi-skin-green .fsi-ui-button.MouseMode_3 .fsi-ui-button-icon:before {
+	content: "\0066";
+}
+
+.fsi-skin-green .fsi-ui-button.HotSpots .fsi-ui-button-icon:before {
+	content: "\0068";
+}
+.fsi-skin-green .fsi-ui-button.MaxZoom .fsi-ui-button-icon:before {
+	content: "\0071";
+}
+.fsi-skin-green .fsi-ui-button.ToggleFullScreen .fsi-ui-button-icon:before {
+	content: "\0072";
+}
+.fsi-skin-green .fsi-ui-button.ToggleFullScreen.fsi-ui-button-active .fsi-ui-button-icon:before {
+	content: "\0073";
+}
+
+/* info window */
+
+.fsi-skin-green .fsi-ui-info-window {
+	border:0.2em solid #74854e;
+	border-radius:0.3em;
+
+}
+
+
+.fsi-skin-green .fsi-ui-info-window .fsi-ui-title {
+	background-color:#74854e;
+	
+}
