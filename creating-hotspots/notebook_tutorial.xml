@@ -1,0 +1,50 @@
+<fsi_parameter>
+
+<options>
+	<inPlaceZoom value="true"/> 
+	<debug value="false"/> 
+	<hideui value="false"/>
+	<noNav value="false"/>
+	<skin value="silver"/>
+	<scenesets value="1-24;25-48;49-72;73-96;97-120;121-144;145-168;169-192;193-216"/>
+	<initialview value="4,1"/>
+	<initialviewPersistent value="true"/>
+	<spinPreviewWhileLoading value="false"/>
+	<nosceneloop value="false"/>
+	<nosetloop value="true"/>
+	<drawcube value="false"/>
+	<drawtable value="false"/>
+	<tablediameter value="2000"/>
+	<enablehotspots value="true"/>
+	<hotspotLineColor1 value='#9bd2ff'/>
+	<hotspotLineColor2 value='#58a8ff'/>
+	<hotspotDotColor1 value='#9bd2ff'/>
+	<hotspotDotColor2 value='#58a8ff'/>
+	<hotspotDotRadius value="3"/>
+	<decodeHTMLEntitiesInHotSpotTexts value="false"/>
+	<pellets value="false"/>
+	<includeconfig value="samples/notebook-hotspots_new.xml"/>
+</options>
+
+<camera>
+	<digitalcropfactor value="1.0"/>
+	<focallength value="43"/>
+	<position value="0, 100, 1100"/>
+	<targetPosition value="0, 100, 0"/>
+	<armJointPosition value="0, 100, 0"/>
+	<armLength value="1100"/>
+	<armAngleMeasureSetup  value= "0"/>
+	<armAngleStart  value= "-90"/>
+	<armAngleEnd  value= "90"/>
+</camera>
+
+	
+<virtualspace>
+	<cubesizex value="374.3"/>
+	<cubesizey value="291,55"/>
+	<cubesizez value="247.6"/>
+</virtualspace>
+
+	
+
+</fsi_parameter>

@@ -1,0 +1,100 @@
+
+.fsi-showcase-buttons {
+  width:100%;
+  height: 160px;
+bottom:0;
+position:absolute;
+}
+
+@media screen and (min-width: 800px) {
+  .fsi-fullscreen-element .fsi-showcase-buttons {
+    display:none;
+  }
+}
+
+.fsi-showcase-buttons-inner {
+  width: 100%;
+  height: 160px;
+  position:relative;
+  margin-left:auto;
+  margin-right:auto;
+  max-width:784px;
+}
+
+
+.prev {
+  margin-right:5px;
+  position:absolute;
+  left:-8px;
+  top:50%;
+  transform: translate(-100%, -50%);
+  width: 25px;
+  height: 25px;
+  border-radius: 10%;
+  background-image: url(//docs.neptunelabs.com/fsi/static/assets/icons/icon-arrow-left.svg)!important;
+  background-repeat: no-repeat;
+  background-size: contain !important;
+  background-position: center center;
+
+}
+
+.next {
+  position:absolute;
+  right:-8px;
+  top:50%;
+  transform: translate(100%, -50%);
+  width: 25px;
+  height: 25px;
+  border-radius: 10%;
+  background-image: url(//docs.neptunelabs.com/fsi/static/assets/icons/icon-arrow-right.svg)!important;
+  background-repeat: no-repeat;
+  background-size: contain !important;
+  background-position: center center;
+
+}
+
+
+input[type=button] {
+  background: #355d5d;
+  color: #fff;
+  padding: 5px;
+  border: 0px;
+}
+
+fsi-thumbbar.fsi-10-thumbs{
+  margin-left:auto;
+  margin-right:auto;
+  flex: 0 0 160px;
+}
+
+fsi-viewer.fsi-10-viewer {
+flex: 1 1 100%;
+}
+
+div.fsi-showcase-10{
+  width:500px;
+  height:500px;
+  display:flex!important;
+  flex-direction:column!important;
+  flex-wrap:nowrap!important;
+  position:relative;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+@media screen and (min-width: 800px) {
+  .fsi-fullscreen-element div.fsi-showcase-10 {
+    width:100% !important;
+    height:100% !important;
+  }
+}
+
+fsi-thumbbar div.fsi-thumbbar-container .fsi-thumbbar-thumbnail img {
+  border: 1px solid transparent;
+}
+fsi-thumbbar
+  div.fsi-thumbbar-container
+  .fsi-thumbbar-thumbnail.fsi-selected-thumb
+  img {
+  border-color: #355d5d;
+}
