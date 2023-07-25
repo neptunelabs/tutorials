@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+  <meta http-equiv="content-type" content="text/html" charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta charset="UTF-8">
+  <title>Your FSI Code</title>
+  <style type="text/css">
+    html,body{
+      font-family:Arial,sans-serif;
+      width:100%;height:100%;
+      margin:0;
+      padding:0;
+    }
+  </style>
+  <script src="//docs-origin.neptunelabs.com/fsi/viewer/applications/touchzoom/js/fsitouchzoom.js"></script>
+<script src="//docs-origin.neptunelabs.com/fsi/viewer/applications/quickzoom/js/fsiquickzoom.js"></script>
+<script src="//docs-origin.neptunelabs.com/fsi/viewer/applications/imagegrid/js/fsiimagegrid.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<script src="material-dialog.js"></script>
+</head>
+<body>
+<div class="row">
+  <div class="col s12" style="padding-bottom: 20px;"></div></div>
+  <div class="row"><div class="col s2"></div>
+    <div class="col s8">  
+      <div style="padding-bottom: 220px;">
+    <div class="center-align"><span style="font-size: x-large; color: #000000;"><strong><br>Shoe Collection</strong></span></div>
+    <p class="center-align">Click on an image to download it in different dimensions (or the original resolution).</p>
+<fsi-imagegrid style="text-align:center;width:100%;height:100%;"
+  dir="images/samples/imagegrid/shoes"
+  cellWidth="240"
+  cellHeight="231"
+  onCellClick="openDownloadModal"
+  downloadTargetFrame="_self"
+>
+
+<fsi-imagegrid-template style="display:none">
+				<div class="myImageGridTitle">
+					<span>###iptc.Caption###</span>
+				</div>
+				<div class="myImageGridImage" >
+					<img class="fsi-image-grid-image"/>
+				</div>
+				<div class="myImageGridText" >
+					<span>
+						###iptc.FSI Extra###<br/><br/>
+						Photo: ###iptc.Credit###<br/><br/>
+					</span>
+				</div>
+			</fsi-imagegrid-template>
+
+	</fsi-imagegrid>
+  
+<div class="col s2"></div>
+</div>
+  <div class="row"> <div class="col s12" style="height: 80px"></div></div>
+  <div class="row">
+    <div class="col s12" style=""></div>  
+  </div>
+<div id="downloadSelection" class="modal">
+  <div class="modal-content">
+    <div class="row start">
+      <div class="col l4 s7"><h4>Download Image</h4></div>
+      <div class="col s8 right-align"><img id="downloadPreviewImg"></div>
+    </div>
+    <div class="row">
+      <div class="col s12">Select the appropriate size or define your own.</div>
+    </div>
+    <div class="row">
+      <div class="col s12"><hr/></div>
+    </div>
+    <div class="row">
+      <div class="col s3 center-align">
+        <h5 id="dsSize1"></h5>
+        <h6>Small</h6>
+        <p>JPEG</p>
+      </div>
+      <div class="col s3 center-align">
+        <h5 id="dsSize2"></h5>
+        <h6>Medium</h6>
+        <p>JPEG</p>
+      </div>
+      <div class="col s3 center-align">
+        <h5 id="dsSize5"></h5>
+        <h6>Original Size</h6>
+        <p>Original File Type</p>
+      </div>
+      <div class="col s3 center-align" id="dsSize6">
+        <div class="input-field col s6">
+              <input type="number" min="1" max="1000" placeholder="px" id="dsCustomWidth" class="autocomplete">
+              <label for="autocomplete-input">Width</label>
+            </div>
+        <div class="input-field col s6">
+              <input type="number" min="1" max="1000" placeholder="px" id="dsCustomHeight" class="autocomplete">
+              <label for="autocomplete-input">Height</label>
+            </div>
+        <h6>PNG</h6>
+        <p>with padding</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s3 center-align">
+        <a class="waves-effect waves-light btn light-blue darken-4 download-btn" data-size-elem="dsSize1">Download</a>
+      </div>
+      <div class="col s3 center-align">
+        <a class="waves-effect waves-light btn light-blue darken-4 download-btn" data-size-elem="dsSize2">Download</a>
+      </div>
+      <div class="col s3 center-align">
+        <a class="waves-effect waves-light btn light-blue darken-4 download-btn" data-size-elem="dsSize5">Download</a>
+      </div>
+      <div class="col s3 center-align">
+        <a class="waves-effect waves-light btn light-blue darken-4 download-btn" data-size-elem="dsSize6">Download</a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s12"><hr/></div>
+    </div>
+
+  </div>
+  <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+  </div>
+</div>
+
+<style type="text/css">
+fsi-imagegrid .fsi-imagegrid-root .myImageGridTitle {
+  padding: 2px 6px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 20px;
+  background-color: #eee;
+  color: #666;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+fsi-imagegrid .fsi-imagegrid-root .myImageGridTitle > span {
+  float: center;
+  line-height: inherit;
+}
+
+div.fsi-imagegrid-inner-container > div {
+  border: 1px solid #eeee;
+}
+fsi-imagegrid .fsi-imagegrid-root .myImageGridText {
+  padding: 4px;
+  font-size: 12px;
+  text-align: center;
+  height: 50px;
+  background-color: #eee;
+  color: #666;
+  overflow: hidden;
+
+  white-space: nowrap;
+}
+fsi-imagegrid .fsi-imagegrid-root .myImageGridText > span {
+  display: inline-block;
+  text-align: center;
+}
+
+fsi-imagegrid div.fsi-imagegrid-root .myImageGridImage {
+  height: calc(100% - 70px);
+  background-color: #eee;
+  text-align: center;
+  overflow: hidden;
+}
+
+fsi-imagegrid .fsi-imagegrid-root .fsi-imagegrid-inner-container > div {
+  margin: 4px;
+}
+
+fsi-imagegrid .fsi-imagegrid-root .fsi-image-grid-image-parent img {
+  vertical-align: top;
+}
+
+div.fsi-imagegrid-inner-container > div:hover {
+  border-color: #00897b;
+  -webkit-box-shadow: 0px 0px 0px 2px #00897b;
+  box-shadow: 0px 0px 0px 2px #00897b;
+}
+
+</style>
+
+</body>
+</html>
