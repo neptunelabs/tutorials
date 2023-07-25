@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+  <meta http-equiv="content-type" content="text/html" charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta charset="UTF-8">
+  <title>Your FSI Code</title>
+  <style type="text/css">
+    html,body {
+      font-family: Arial,sans-serif;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+  <script src="//docs.neptunelabs.com/fsi/viewer/applications/viewer/js/fsiviewer.js"></script>
+  <script src="//docs.neptunelabs.com/fsi/viewer/applications/touchzoom/js/fsitouchzoom.js"></script>
+  <script src="//docs.neptunelabs.com/fsi/viewer/applications/thumbbar/js/fsithumbbar.js"></script>
+  <link rel="stylesheet" href="showcase.css">
+</head>
+<body>
+  <div id="Container_FSI_yBX8HC62VCiF" class="fsi-showcase-10">
+    <fsi-viewer
+    class="fsi-10-viewer"
+      id="FSI_yBX8HC62VCiF"
+      width="100%"
+      height="100%"
+      cfg="showcase_presets/showcase_flat.xml"
+      debug="true"
+      skin="white"
+      plugins="Resize, fullscreen"
+      fullscreenelement="Container_FSI_yBX8HC62VCiF">
+      <noscript>
+        <img
+        alt=""
+        src="//docs.neptunelabs.com/fsi/server?type=image&source=images/samples/Shoe/View2/sneaker-both-1.jpg"
+        width="286" />
+      </noscript>
+    </fsi-viewer>
+    <div class="fsi-showcase-buttons">
+      <div class="fsi-showcase-buttons-inner" id="myThumbBarControls">
+        <input class="prev" type="button" x-fsi-cmd="previousImage" />
+        <input class="next" type="button" x-fsi-cmd="nextImage" />
+      </div>
+    </div>
+    <fsi-thumbbar
+      class="fsi-10-thumbs"
+      viewerSelector="FSI_yBX8HC62VCiF"
+         width="100%"
+    height="100%"
+    dir="images/samples/showcase/tutorial"
+    vertical="false"
+    elementWidth="160px"
+    elementSpacing="4px"
+    alignment="0.5"
+    paddingTop="0"
+    scrollbar="false"
+    paddingBottom="4"
+      cmdButtonSelector="#myThumbBarControls > input"></fsi-thumbbar>
+  </div>
+</body>
+</html>

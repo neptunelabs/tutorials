@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+  <meta http-equiv="content-type" content="text/html" charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta charset="UTF-8">
+  <title>Your FSI Code</title>
+  <style type="text/css">
+    html,body {
+      font-family: Arial,sans-serif;
+      width: 100%;
+      height: 98%;
+      margin: 0;
+      padding: 0;
+    }
+  
+    .bookmark {
+      background-color: #1c4d799e;
+      margin-bottom: 1em;
+      margin-top: 1em;
+      padding: 1em;
+      float: right;
+      height: 80%;
+     color: white;
+    
+    }
+  .headline {
+    text-align: center;
+  }
+</style>
+<script src="//docs-origin.neptunelabs.com/fsi/viewer/applications/viewer/js/fsiviewer.js"></script>
+<script src="//docs-origin.neptunelabs.com/fsi/viewer/applications/touchzoom/js/fsitouchzoom.js"></script>
+<script src="//docs-origin.neptunelabs.com/fsi/viewer/applications/thumbbar/js/fsithumbbar.js"></script>
+<script src="bookmarks.js"></script>
+</head>
+<body id="myFullScreenElement">
+<div class="headline">
+<h3>Adding images to ThumbBar at runtime</h3>
+Select images and zoom and pan.<br />
+Each time the view or images changes, a new image will be added to
+the vertical thumbnail bar.<br />
+Press "delete" to remove all bookmark images.<br />
+</div>
+<div class="bookmark">
+<p>
+Your Bookmarks
+</p>
+<fsi-thumbbar
+id="elThumbBarVert"
+vertical="true"
+elementWidth="115px"
+paddingTop="0"
+paddingBottom="0"
+alignment="center"
+autoElementSpacing="0"
+width="120px"
+height="90%"
+placeHolderImage="none"
+></fsi-thumbbar>
+</div>
+<fsi-viewer
+width="90%"
+height="70%"
+id="myBookMarkViewer"
+skin="white"
+plugins="fullscreen"
+fullScreenElement="myFullScreenElement"
+onViewChanged="onFSIViewChanged">
+</fsi-viewer>
+<fsi-thumbbar
+id="elThumbBarHorz"
+viewerSelector="#myBookMarkViewer"
+dir="/images/samples/showcase/handbags/"
+elementWidth="10%"
+paddingTop="4"
+paddingBottom="4"
+autoElementSpacing="true"
+Alignment="1"
+height="15%"
+width="90%"
+placeHolderImage="none"
+></fsi-thumbbar>
+</body>
+</html>
