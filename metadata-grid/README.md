@@ -1,4 +1,4 @@
-# Advanced Showcase Tutorial 
+# Download Option Tutorial 
 
 This folder contains the resources for the tutorial [Displaying a grid with metadata](https://docs.neptunelabs.com/docs/tutorials/image-grid).
 
