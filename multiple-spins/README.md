@@ -1,4 +1,4 @@
-# Multiple spins Tutorial 
+# Multiple Spins Tutorial 
 
 This folder contains the resources for the tutorial [Multiple spins](https://docs.neptunelabs.com/docs/tutorials/multiple-spins).
 

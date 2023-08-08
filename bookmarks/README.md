@@ -1,4 +1,4 @@
-# Advanced Showcase Tutorial 
+# Bookmarks Tutorial 
 
 This folder contains the resources for the tutorial [Bookmark Thumbnails with FSI ThumbBar](https://docs.neptunelabs.com/docs/tutorials/bookmark).
 
